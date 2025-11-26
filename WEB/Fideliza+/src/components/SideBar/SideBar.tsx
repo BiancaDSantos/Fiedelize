@@ -8,7 +8,9 @@ function SideBar() {
 
     const navItens = [
         { name: "Dashboard", path: "/dashboard", icon: <BsFillHouseFill className="me-2"/> },
-        // Add more navigation items here as needed
+        { name: "Cadastrar Cliente", path: "/cadastrar-cliente", icon: <BsFillHouseFill className="me-2"/> },
+        { name: "Lançar Pontos", path: "/lançar-pontos", icon: <BsFillHouseFill className="me-2"/> },
+        { name: "Consultar Clientes", path: "/consultar-clientes", icon: <BsFillHouseFill className="me-2"/> },
     ];
 
 

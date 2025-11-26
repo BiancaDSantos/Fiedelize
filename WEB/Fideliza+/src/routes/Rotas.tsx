@@ -15,6 +15,9 @@ function Rotas() {
 
             {/* --- Rotas Privadas --- */}
             <Route path="/dashboard" element={<PrivateRoute><Dashboard/></PrivateRoute>} />
+            <Route path="/cadastrar-cliente" element={<Navigate to="/cadastrar-cliente" replace/>} />
+            <Route path="/lançar-pontos" element={<Navigate to="/lançar-pontos" replace/>} />
+            <Route path="/consultar-clientes" element={<Navigate to="/consultar-clientes" replace/>} />
             {/* --- Fim das Rotas Privadas --- */}
         </Routes>
     )
