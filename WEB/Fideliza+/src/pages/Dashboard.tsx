@@ -37,10 +37,6 @@ function Dashboard() {
                     ))}
                 </ul>
             </div>
-            
-            <div className="card col-md-9 mt-4 p-4">
-                <h3>Total de pontos cadastrados hoje</h3>
-            </div>
         </div>
     )
 }
