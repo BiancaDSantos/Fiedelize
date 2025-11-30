@@ -3,6 +3,7 @@ import contaFidelidadeService from "../services/ContaFidelidadeService";
 import transacaoService from "../services/TransacaoService";
 import type { ClienteFidelidade } from "../types/ClienteFidelidade";
 import { TipoTransacao } from "../types/Transacao";
+import SideBar from "../components/SideBar/SideBar";
 
 const multiplicadorMap: Record<string, number> = {
 	ACUMULO: 1,
@@ -60,8 +61,10 @@ function LancarPontos() {
 			.finally(() => setLoading(false));
 	};
 
+
 	return (
 		<div className="container mt-4">
+            <SideBar />
 			<h2>Lançar Pontos</h2>
 
 			<form onSubmit={handleSubmit} className="mt-3">

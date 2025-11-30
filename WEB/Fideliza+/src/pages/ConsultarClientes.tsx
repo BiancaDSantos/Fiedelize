@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import contaFidelidadeService from "../services/ContaFidelidadeService";
 import type { ClienteFidelidade } from "../types/ClienteFidelidade";
+import SideBar from "../components/SideBar/SideBar";
 
 function ConsultarClientes() {
   const [clientes, setClientes] = useState<ClienteFidelidade[]>([]);
@@ -39,6 +40,7 @@ function ConsultarClientes() {
 
   return (
     <div className="container mt-4">
+        <SideBar />
       <div className="d-flex justify-content-between align-items-center mb-3">
         <h2>Consultar Clientes Fidelidade</h2>
         <button className="btn btn-success" onClick={() => navigate('/cadastrar-cliente')}>

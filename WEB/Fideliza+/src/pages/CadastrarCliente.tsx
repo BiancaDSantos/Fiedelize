@@ -3,6 +3,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import contaFidelidadeService from "../services/ContaFidelidadeService";
 import type { ClienteFidelidade } from "../types/ClienteFidelidade";
 
+import SideBar from "../components/SideBar/SideBar";
+
 function CadastrarCliente() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -55,7 +57,10 @@ function CadastrarCliente() {
   };
 
   return (
+    
+    
     <div className="container mt-4">
+        <div><SideBar /></div>
       <h2>{id ? "Editar Cliente Fidelidade" : "Cadastrar Cliente Fidelidade"}</h2>
       <form onSubmit={handleSubmit} className="mt-3">
         <div className="mb-3">
